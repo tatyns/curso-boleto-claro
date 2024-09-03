@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <title>Page Claro</title>
+</head>
+<body>
+    <!-- Header com icones -->
+    <table width="600px" align="center" cellpadding="0" cellspacing="0" bgcolor="#da291c">
+        <tr>
+            <td align="left" style="padding: 10px;">
+                <img src="./img/logo-header.png" alt="Logo da Claro">
+            </td>
+            <td align="right" style="padding: 10px;">
+                <img src="./img/icones-header.png" alt="Icones">
+            </td>
+        </tr>
+    </table>
+    <!-- Imagem Banner -->
+    <table width="600px" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <img src="./img/banner.jpg" alt="Banner" width="600px">
+            </td>
+        </tr>
+    </table>
+    <!-- Texto pós banner -->
+    <table width="600px" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="font-family: Arial, sans-serif; font-size: 16px;padding-left: 80px;padding-top: 20px;">
+                <strong>Olá !</strong>
+                <br><br>
+                Você está recebendo em anexo a sua <strong>fatura Claro.</strong>
+            </td>
+        </tr>
+    </table>
+    <!-- Box de fatura -->
+    <table width="530px" id="tableFatura" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" >
+        <tr>
+            <td style="line-height: 1px" height="37">
+                <img src="./img/box_parte1.png" alt="Parte 1" style="display:inline-block margi">
+            </td>
+            <td style="line-height: 1px" height="15" >
+                <img src="./img/box_parte2.png" alt="Parte 2" style="display:inline-block">
+            </td>
+            <td style="line-height: 1px" height="37" border="0">
+                <img src="./img/box_parte3.png" alt="Parte 3" style="display:inline-block">
+            </td>
+        </tr>
+        <tr>
+            <td style="line-height: 1px">
+                <img src="./img/box_parte7.png" alt="Parte 7" style="display:inline-block">
+            </td>
+            <td valign="top">
+                <table id="tableFaturaInterno" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+                    <tr>
+                        <td height="40" valign="top" align="left" style="font-family: Arial, Helvetica, sans-serif;color:#000;font-size:12px;">
+                            Código do Cliente:
+                            <br>
+                            %CODIGO_CLIENTE%
+                        </td>
+                        <td valign="top" align="right" style="font-family: Arial, Helvetica, sans-serif;color:#000;font-size:12px;">
+                            Vencimento:
+                            <br>
+                            %VENCIMENTO%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="font-family: Arial, Helvetica, sans-serif;color:#000;font-size:12px;">
+                            Código de Barras:
+                            <br>
+                            %COD_BARRAS%
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    
+                                    <td>
+                                        <img src="./img/pix-img.png" width="39" height="40" alt="Pix Image" >
+                                    </td>
+                                    <td colspan="2" align="top" style="font-family: Arial, Helvetica, sans-serif;color:#000;font-size:12px;">
+                                        Código do pix:
+                                        <br>
+                                        %COD_PIX%
+                                    </td>
+                            
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="border: none; padding: 0; height: 49px; line-height: 0;">
+                <img src="./img/box_parte4.png" alt="Parte 4" style="display: block; margin: 0; padding: 0; border: none;">
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #ee352a; padding: 0; border: none; height: 49px; line-height: 0;">
+                <img src="./img/box_parte6.png" alt="Parte 6" style="display: block; margin: 0; padding: 0; border: none; height: 100%;">
+            </td>
+            <td bgcolor="#ee352a" height="49" style="font-family: Arial, Helvetica, sans-serif; color: #fff; font-size: 18px; padding: 0; margin: 0;">
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0; padding: 0;">
+                    <tr>
+                        <td bgcolor="#ee352a" align="left" height="49" style="font-family: Arial, Helvetica, sans-serif; color: #fff; font-size: 18px; padding: 0; margin: 0;">
+                            %VALOR%
+                        </td>
+                        <td align="right" style="text-align: right; font-family: Arial, Helvetica, sans-serif; color: #fff; font-size: 18px; padding: 0; margin: 0;">
+                            Total a pagar
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="background-color: #ee352a; padding: 0; border: none; height: 49px; line-height: 0;">
+                <img src="./img/box_parte5.png" alt="Parte 5" style="display: block; margin: 0; padding: 0; border: none; height: 100%;">
+            </td>
+        </tr>
+     </table>
+     <!-- Pós box fatura -->
+    <table width="530" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+        <tr>
+            <td align="left" style="color: #3a3e3d; font-family:Arial, Helvetica, sans-serif; font-size: 16px;padding-top: 40px;">
+                <strong>Para abrir a sua fatura, é
+                    necessário digitar os 5 primeiros
+                    números do CPF ou CNPJ do titular da
+                    assinatura.</strong> Ex.: CPF:
+                123.456.789-00*
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="padding-top: 10px;padding-bottom: 10px;">
+                <img src="./img/num.png" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color: #3a3e3d; font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+                *Os números do exemplo acima são fictícios.
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-top: 15px;padding-bottom: 15px;">
+                <img src="./img/line.png" width="507" height="1" alt="" border="0" >
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color: #3a3e3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+                <strong>Facilite ainda mais o seu dia a dia</strong> realizando o pagamento
+                de suas faturas Claro com o <strong style="color: #ee352a;">PIX</strong>.
+                <br><br>
+                <strong>Veja o passo a passo:</strong>
+            </td>
+        </tr>
+    </table>
+    <!-- Box de passo a passo -->
+    <table id="tableResumo" width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; ">
+        <tr>
+            <td align="center" colspan="3" style="padding-top: 20px;line-height: 1px; margin: 0;">
+                <img src="./img/box_red_top.png" width="600" height="18" style="display:inline-block; border: 0; margin: 0; padding: 0;">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 0; margin: 0;" align="left">
+                <img src="./img/box_red_left.png" width="75%" height="244" style="display: block; border: 0; margin: 0; padding: 0;" align="center">
+            </td>
+            <td style="padding: 0; margin: 0;" align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="95%" style="border-collapse: collapse; margin: 0; padding: 0;">
+                    <tr>
+                        <td style="padding: 0; margin: 0; width: 33%;">
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0; padding: 0;">
+                                <tr>
+                                    <td align="center">
+                                        <img src="./img/ico1.png" width="59" height="46" alt="." style="display: block; border: 0; margin: 0; padding: 0;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; padding-top: 10px;">
+                                        Copie o código PIX<br> disponibilizado neste<br> e-mail no box acima.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="padding: 0; margin: 0; width: 33%;" align="center" width="33%">
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0; padding: 0;">
+                                <tr>
+                                    <td align="center">
+                                        <img src="./img/ico2.png" width="59" height="46" alt="." style="display: block; border: 0; margin: 0; padding: 0;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; padding-top: 10px;">
+                                        Acesse o app ou site<br> do seu banco.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="padding: 0; margin: 0; width: 33%;" align="center">
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0; padding: 0;" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <img src="./img/ico3.png" width="59" height="46" alt="." style="display: block; border: 0; margin: 0; padding: 0;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; padding-top: 10px;">
+                                        Selecione a<br> opção PIX.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0; margin: 0; width: 33%; padding-top: 35px;" align="center">
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0; padding: 0;" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <img src="./img/ico4.png" width="59" height="46" alt="." style="display: block; border: 0; margin: 0; padding: 0;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; padding-top: 10px;">
+                                        Escolha pagar<br> por QR Code.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="padding: 0; margin: 0; width: 33%; padding-top: 35px;" align="center">
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0; padding: 0;" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <img src="./img/ico5.png" width="59" height="46" alt="." style="display: block; border: 0; margin: 0; padding: 0;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; padding-top: 10px;">
+                                        Selecione “Pix Copia e<br> Cola” e cole o código.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="padding: 0; margin: 0; width: 33%; padding-top: 35px;" align="center">
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0; padding: 0;" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <img src="./img/ico6.png" width="59" height="46" alt="." style="display: block; border: 0; margin: 0; padding: 0;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; padding-top: 10px;">
+                                        Finalize a<br> transação.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="padding: 0; margin: 0;line-height: 1px;" align="right">
+                <img src="./img/box_red_right.png" width="55" height="244" style="display: block; border: 0; margin: 0; padding: 0;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding: 0; margin: 0;padding-bottom: 20px;line-height: ;">
+                <img src="./img/box_red_bottom.png" width="600" height="18" style="display: block; border: 0; margin: 0; padding: 0;">
+            </td>
+        </tr>
+    </table>
+    <!-- Box de segurança -->
+    <table width="530" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+        <tr>
+            <td align="center" style="padding: 0; margin: 0;">
+                <img src="./img/box_top.png" alt="" style="display:block;border:0; margin: 0;padding: 0;">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#eff0f2" style="padding: 0;margin: 0;">
+                <table align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse;margin: 0;padding:0;">
+                    <tr>
+                        <td align="center" style="color: #3a3e3d; font-family:Arial, Helvetica, sans-serif; font-size: 16px;padding-left: 10px; padding-top:10px;padding-bottom: 0px;margin:0;">
+                            <strong>Fique atento: sua Fatura Digital sempre chegará pelo remetente
+                                <a href="mailto:faturadigital@minhaclaro.com.br" style="text-decoration: none;color: #ee352a;">faturadigital@minhaclaro.com.br</a>.</strong>
+                            <br>
+                            <br>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding: 0; margin: 0;">
+                            <img src="./img/line-white.png" alt=""style="display: block; border: 0; padding: 0; margin: 0;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="color: #3a3e3d; font-family:Arial, Helvetica, sans-serif; font-size: 16px;padding-left: 10px; padding-top:10px;padding-bottom: 10px;margin: 0;">
+                            Acesse <strong><a href="https://www.claro.com.br/seguranca?utm_source=faturamento&amp;utm_medium=email&amp;utm_campaign=fd_optantes_net_boleto_pix" style="text-decoration: none; color: #3a3e3d;">claro.com.br/seguranca</a></strong>
+                            e confira mais dicas de como identificar a veracidade da fatura e outras dicas de segurança.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <img src="./img/box_bottom.png" alt="">
+            </td>
+        </tr>
+    </table>
+    <!-- Adobe -->
+    <table width="530" align="center" border="0" cellspacing="0" style="border-collapse: collapse">
+        <tr>
+            <td align="center">
+                <img src="./img/adobe.png" alt="">
+            </td>
+            <td align="left" style="color: #3a3e3d; font-family:Arial, Helvetica, sans-serif; font-size: 13; padding-left: 20px; padding-top: 10; padding-bottom: 10px;">
+                Para visualizar sua conta, é preciso que voê tenha o programa Adobe Acrobat Reaader Instalado em seu computador. Caso não tenha, <a href="https://get.adobe.com/br/reader/otherversions/;" style="color:#ef3820; text-decoration:underline;">clique aqui</a>
+                e faça o download gratuitamente.
+            </td>
+    </table>
+    <table width="530" align="center" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse">
+        <tr>
+            <td align="center">
+                <img src="./img/line.png" width="507" height="1" alt="" border="0">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <img src="./img/box_parte2.png" alt=".">
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="color:#3a3e3d; font-family: Arial, Helvetica, sans-serif; font-size: 13px; padding-left: 15px;padding-bottom: 15px;">
+                Coloque a sua fatura em débito automático e tenha mais tranquilidade e segurança nos seus pagamentos.
+                E você ainda tem outros benefícios:
+            </td>
+        </tr>
+    </table>
+    <!-- para parte de beneficios -->
+    <table width="530" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+        <tr>
+            <td style=" padding-top: 40px; padding-bottom: 20px;">
+                <table width="85%" cellpadding="0" cellspacing="0" aling="center" style="border-collapse: collapse;">
+                    <tr>
+                        <td align="center">
+                            <img src="./img/ico7.png" width="64" height="46" alt=".">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; padding-top: 10px;">
+                        Você não perecisa se preocupar com a data de vencimento.
+                        </td>
+                    </tr>
+                </table>
+            </td>  
+            <td style=" padding-top: 40px; padding-bottom: 20px;">
+                <table width="85%" cellpadding="0" cellspacing="0" aling="center" style="border-collapse: collapse;">
+                    <tr>
+                        <td align="center">
+                            <img src="./img/ico8.png" width="64" height="46" alt=".">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; padding-top: 10px;">
+                        Pagamento sempre em dia, sem precisar ir ao banco.
+                        </td>
+                    </tr>
+                </table>
+            </td>  
+            <td style=" padding-top: 40px; padding-bottom: 20px;">
+                <table width="85%" cellpadding="0" cellspacing="0" aling="center" style="border-collapse: collapse;">
+                    <tr>
+                        <td align="center">
+                            <img src="./img/ico9.png" width="64" height="46" alt=".">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; padding-top: 10px;">
+                        Tudo com muita comodidade e segurança.
+                        </td>
+                    </tr>
+                </table>
+            </td>  
+            <td style=" padding-top: 40px; padding-bottom: 20px;">
+                <table width="85%" cellpadding="0" cellspacing="0" aling="center" style="border-collapse: collapse;">
+                    <tr>
+                        <td align="center">
+                            <img src="./img/ico10.png" width="64" height="46" alt=".">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; padding-top: 10px;">
+                        Desconto de até R$10,00 por mês na sua fatura.
+                        </td>
+                    </tr>
+                </table>
+            </td>  
+        </tr>
+    </table>
+    <!-- Box CTA -->
+    <table width=" 530" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+        <tr>
+            <td style="padding-top: 20px;">
+                <img src="./img/cta.png" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color: #3a3e3d; font-family:Arial, Helvetica, sans-serif; font-size: 13px;padding: 20px;">
+                <strong> Baixe o Minha Claro e facilite o seu
+                    dia a dia.</strong>
+            </td>
+           
+            </tr>
+    </table>
+    <!-- box minha claro -->
+    <table width="530" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0 auto;">
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0 auto;">
+                    <tr>
+                        <td align="center" style="padding: 0; margin: 0;">
+                            <a href="https://www.claro.com.br/seguranca?utm_source=faturamento&amp;utm_medium=email&amp;utm_campaign=fd_optantes_net_boleto_pix">
+                                <img src="./img/box_minhaclaro_top.png" alt="Top border image" border="0" style="display: block;">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top" style="padding: 0; margin: 0;">
+                            <!-- dados -->
+                            <table width="200" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0 auto;">
+                                <tr>
+                                    <td align="center" valign="middle" style="padding: 0; margin: 0;">
+                                        <img src="./img/box_minhaclaro_left.png" alt="Left border image" border="0" style="display: block;">
+                                    </td>
+                                    <td align="center" valign="middle" style="padding: 0; margin: 0;">
+                                        <a href="http://apps.aple.com.br/app/minha-claro-residencial.net/1d518321053">
+                                            <img src="./img/box_minhaclaro_apple.png" alt="Apple Store link" border="0" style="display: block;">
+                                        </a>
+                                    </td>
+                                    <td align="center" valign="middle" style="padding: 0; margin: 0;">
+                                        <a href="https://play.google.com/store/apps/details?id=br.com.net.metapp&hl=pt_BR">
+                                            <img src="./img/box_minhaclaro_google.png" alt="Google Play link" border="0" style="display: block;">
+                                        </a>
+                                    </td>
+                                    <td align="center" valign="middle" style="padding: 0; margin: 0;">
+                                        <img src="./img/box_minhaclaro_qr.png" alt="QR code image" border="0" style="display: block;">
+                                    </td>
+                                    <td align="center" valign="middle" style="padding: 0; margin: 0;">
+                                        <img src="./img/box_minhaclaro_right.png" alt="Right border image" border="0" style="display: block;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top" style="padding: 0; margin: 0;">
+                            <img src="./img/box_minhaclaro_bottom.png" alt="Bottom border image" border="0" style="display: block;">
+                         </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="50%" valign="top" align="center">            
+                <img src="./img/whats.png" alt=""> 
+            </td>
+        </tr>
+    </table>
+    <!-- texto pos box minha claro -->
+    <table  width="530" align="center" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse">
+        <tr>
+           
+            <td align="center" style= border-collapse:collapse "color: #3a3e3d; font-family:Arial, Helvetica, sans-serif; font-size: 12px;padding-left: 15px; padding-bottom:20;">
+                    Mantenha suas informações cadastrais sempre atualizadas através do <strong>Minha Claro Residencial</strong>strong>.
+                    Para receber com sucesso o e-mail da sua fatura digital Claro, é importante que adicione nosso remetente <a
+                    <a href="mailto:faturadigital@minhaclaro.com.br" style="color: #3a3e3d;text-decoration: none; font-weight:bold;">faturadigital@minhaclaro.com.br</a>
+                     à lista de seus contatos.
+                </td>
+        </tr>
+    </table>
+    <!-- box Footer -->
+    <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+        <tr>
+            <td valign="middle"  bgcolor="#da291c">
+                <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center"> 
+                    <tr>
+                        <td align="left" style="padding-top: 10px; padding-bottom: 10px;">
+                            <!--social  -->
+                            <table width="100%" style="border-collapse: collapse;" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td valign="middle" align="left">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" valing="middle" width="35">
+                                                    <a href="http://facebook.com/clarobrasil">
+                                                        <img src="./img/ico-facebook.png" alt="." border="0">
+                                                    </a>
+                                                </td>
+                                                <td align="center" valing="middle" width="35">
+                                                    <a href="http://twitter.com/clarobrasil">
+                                                        <img src="./img/ico-twitter.png" alt="." border="0">
+                                                    </a>
+                                                </td>
+                                                <td align="center" valing="middle" width="35">
+                                                    <a href="http://instagram/clarobrasil">
+                                                        <img src="./img/ico-instagram.png" alt="." border="0">
+                                                    </a>
+                                                </td>
+                                                <td align="center" valing="middle" width="35">
+                                                    <a href="http://youtube.com/clarobrasil">
+                                                        <img src="./img/ico-youtube.png" alt="." border="0">
+                                                    </a>
+                                                </td>
+                                                <td align="center" valing="middle" width="35">
+                                                    <a href="http://linkedin.com/clarobrasil">
+                                                        <img src="./img/ico-linkedin.png" alt="." border="0">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="left" valign="middle">
+                                        <p style="font-size: 10px;padding: 0;margin: 0; font-family: Arial, Helvetica, sans-serif;color: #FFFFFFFF;">
+                                            2021 Claro. Todos os direitos reservados.
+                                        </p>    
+                                    </td>
+                                    <td align="right">
+                                        <a href="http://claro.com.br"><img src="./img/logo-footer.png" alt="." border="0" style="border-collapse: collapse;" </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>    
+            </td>
+        </tr>
+        <br>
+    </table>
+    <!-- texto pós footer -->
+    <br>
+    <table width="600" align="center"  bgcolor=" #FFFFF" style="max-width: 100%; " border="0" cellspacing="0" cellpadding="5"  >
+        <tr>
+            <td align="left" style="color: #444; font-family:Arial, Helvetica, sans-serif; font-size: 13px; padding-left: 20px; padding-top: 20; padding-bottom: 20px;">
+            
+                *O desconto será válido para clientes que estão cadastrados no Débito Automático
+                com Fatura Digital, sendo o valor: de até R$ 20,00/mês em fatura para clientes
+                Combo com os 3 serviços, o valor é uma composição dos descontos de cada produto
+                contratado (Banda larga - R$5 de desconto e/ou TV - R$5 de desconto + Pós Pago -
+                R$10 de desconto e/ou Controle - R$5 de desconto e Combo (TV por assinatura +
+                Banda Larga). Desconto de R$ 5,00/mês em fatura para clientes que contrataram o
+                Combo (Banda Larga + celular pós e controle ou TV por assinatura + pós e
+                controle) ou que contratam somente um produto (TV por assinatura ou Banda
+                Larga). Importante: para que a forma de pagamento Débito Automático seja
+                efetuada na próxima fatura, solicite com até 20 dias antes do vencimento, caso
+                contrário, ocorrerá no mês posterior. O desconto só é válido se a forma de
+                pagamento e o cadastro na Fatura Digital forem seguidos corretamente. **Não
+                responda a este e-mail. Esta é uma mensagem gerada automaticamente.Para enviar
+                seus comentários, clique aqui e fale conosco. Para entrar em contato com a
+                Central de Relacionamento Claro, ligue 10621.    
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
